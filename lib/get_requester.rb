@@ -5,8 +5,8 @@ require 'json'
 
 class GetRequester
   
-  def get_response_body(url)
- uri = URI.parse(url)
+  def get_response_body(URL)
+ uri = URI.parse(URL)
     response = Net::HTTP.get_response(uri)
     response.body
   
