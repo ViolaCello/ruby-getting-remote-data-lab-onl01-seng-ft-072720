@@ -27,7 +27,7 @@ end
     program_hash = []
      curric  = JSON.parse(self.get_response_body)
   curric.collect do |program|
-    program_hash.push(program)
+    program_hash = program
   end
   end
   
