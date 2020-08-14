@@ -24,9 +24,10 @@ end
   
   
   def parse_json 
+    program_hash = []
      curric  = JSON.parse(self.get_response_body)
   curric.collect do |program|
-    program["agency"]  
+    program_hash.push(program)
   end
   end
   
