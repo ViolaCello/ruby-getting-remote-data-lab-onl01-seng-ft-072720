@@ -24,7 +24,10 @@ end
   
   
   def parse_json 
-    
+     curric  = JSON.parse(self.get_response_body)
+  curric.collect do |program|
+    program["agency"]  
+  end
   end
   
   
